@@ -1,15 +1,17 @@
 <header class="header">
-    <nav class="header__buttons">
-        <!-- <button class="buttons__button button__main" (click)="toggle()" type="button">Главная</button>
-        <button class="buttons__button button__create" (click)="toggle()" type="button">Создать</button>
-        <button class="buttons__button button__create" (click)="toggle()" type="button">Редактировать</button> -->
-        <a href="" class="buttons__button button__main">Главная</a>
-        <a href="create" class="buttons__button button__create">Создать</a>
-        <a href="edit" class="buttons__button button__edit">Редактировать</a>
+    <nav class="header__navigation">
+        <ul class="navigation__links">
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="links__container container_main">
+                <a routerLink="" class="container__link">Главная</a>
+            </li>
+            <li routerLinkActive="active" class="links__container container_create">
+                <a routerLink="create" class="container__link">Создать</a>
+            </li>
+            <li routerLinkActive="active" class="links__container container_edit">
+                <a routerLink="edit" class="container__link">Редактировать</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
-
-<!-- <app-main *ngIf="condition"></app-main>
-<app-create *ngIf="!condition"></app-create> -->
 

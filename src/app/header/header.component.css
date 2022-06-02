@@ -1,25 +1,37 @@
 .header {
     width: 100%;
     height: 20%;
-    display: flex;
     margin-bottom: 20px;
 }
 
-.header__buttons {
+.navigation__links {
     margin: 15px 0 15px 15px;
+    display: flex;
 }
 
-.buttons__button {
+.links__container {
+    list-style-type: none;
+}
+
+.container_create {
+    margin-left: 20px;
+}
+
+.container_edit {
+    margin-left: 20px;
+}
+
+.container__link {
     border: none;
     outline: none;
-    background-color: white;
+    text-decoration: none;
     font-size: 18px;
+    padding: 12px;
 }
 
-.button__create {
-    margin-left: 20px;
-}
-
-.button__edit {
-    margin-left: 20px;
+.active {
+    /* test style */
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 80%;
 }
