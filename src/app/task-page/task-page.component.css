@@ -1,14 +1,3 @@
-.main {
-    margin: 20px;
-}
-
-.main__tasks {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
 .tasks__task {
     width: 100%;
     display: flex;

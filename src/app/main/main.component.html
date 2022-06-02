@@ -1,8 +1,10 @@
 <main class="main">
-    <ul>
-        <li class="tasks__task" *ngFor="let item of array">
-            <h3 class="task__header">{{ item[0] }}</h3>
-            <p class="task__description">{{ item[1] }}</p>
+    <ul class="main__tasks">
+        <li  class="tasks__task" *ngFor="let item of array; let i = index">
+            <a [routerLink]="['task', item[0]]" class="task__container">
+                <h3 class="task__name">{{ item[0] }}</h3>
+                <p class="task__description">{{ item[1] }}</p>
+            </a>
         </li>
     </ul>
 </main>

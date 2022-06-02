@@ -2,13 +2,13 @@
     <nav class="header__navigation">
         <ul class="navigation__links">
             <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="links__container container_main">
-                <a routerLink="" class="container__link">Главная</a>
+                <a routerLink="/" class="container__link">Главная</a>
             </li>
             <li routerLinkActive="active" class="links__container container_create">
-                <a routerLink="create" class="container__link">Создать</a>
+                <a [routerLink]="'/create'" class="container__link">Создать</a>
             </li>
             <li routerLinkActive="active" class="links__container container_edit">
-                <a routerLink="edit" class="container__link">Редактировать</a>
+                <a [routerLink]="'/edit'" class="container__link">Редактировать</a>
             </li>
         </ul>
     </nav>
