@@ -29,7 +29,4 @@ export class EditComponent implements OnInit {
 
   }
 
-  setItemByKey() {
-    this.service.setItemByKey(this.setItem.value.key,this.setItem.value.value);
-  }
 }

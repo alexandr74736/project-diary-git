@@ -13,6 +13,7 @@ export class TaskPageComponent implements OnInit {
   key: string;
   name: string;
   value: string;
+  setItem
 
   constructor(
     private route: ActivatedRoute,
@@ -26,6 +27,11 @@ export class TaskPageComponent implements OnInit {
     });
     this.key = this.id;
     this.value = this.service.getItemByKey(this.key);
+    this.setItem = this.service.setItem
+  }
+
+  setItemByKey() {
+    this.service.setItemByKey(this.setItem.value.key,this.setItem.value.value);
   }
 
 }

@@ -10,7 +10,6 @@ import { MainComponent } from './main/main.component';
 import { CreateComponent } from './create/create.component';
 import { LocalStorage } from './local-storage.service';
 import { EditComponent } from './edit/edit.component';
-import { CardComponent } from './card/card.component';
 import { TaskPageComponent } from './task-page/task-page.component';
 
 
@@ -21,7 +20,7 @@ import { TaskPageComponent } from './task-page/task-page.component';
         ReactiveFormsModule,
         AppRoutingModule
     ],
-    declarations: [ AppComponent, HeaderComponent, MainComponent, CreateComponent, EditComponent, CardComponent, TaskPageComponent ],
+    declarations: [ AppComponent, HeaderComponent, MainComponent, CreateComponent, EditComponent, TaskPageComponent ],
     bootstrap:    [ AppComponent ],
     providers: [ LocalStorage ]
 })

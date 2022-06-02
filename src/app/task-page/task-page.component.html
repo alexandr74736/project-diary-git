@@ -3,4 +3,20 @@
         <h3 class="task__name">{{ key }}</h3>
         <p class="task__description">{{ value }}</p>
     </div>
+    <button type="button">Изменить</button>
 </div>
+<form [formGroup]="setItem" novalidate (ngSubmit)="setItemByKey()">
+    <div class="form-group write">
+        <label>{{ key }}</label>
+        <input class="form-control" name="name" formControlName="key" />
+    </div>
+    <div class="form-group write">
+        <label>{{ value }}</label>
+        <input class="form-control" name="name" formControlName="value" />
+    </div>
+    <div class="form-group send">
+        <button class="btn btn-default">
+            Изменить
+        </button>
+    </div>
+</form>
