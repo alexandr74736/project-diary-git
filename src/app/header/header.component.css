@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header__buttons {
+    margin: 15px 0 15px 15px;
+}
+
+.buttons__button {
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 18px;
+}
+
+.button__create {
+    margin-left: 20px;
+}
+
+.button__edit {
+    margin-left: 20px;
+}

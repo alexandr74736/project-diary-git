@@ -1,0 +1,45 @@
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}
+
+.write {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.test {
+    border: 2px solid lightblue;
+    height: 20%;
+}
+
+.tasks__task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task__header {
+    width: 100%;
+    text-align: center;
+}
+
+.task__description {
+    width: 80%;
+    border: 5px solid lightslategray;
+    background-color: lightsteelblue;
+}
+
+

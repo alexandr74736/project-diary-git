@@ -1,0 +1,29 @@
+.main {
+    width: 100%;
+    margin: 20px;
+}
+
+.main__tasks {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.tasks__task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task__header {
+    width: 100%;
+    text-align: center;
+}
+
+.task__description {
+    width: 80%;
+    border: 5px solid lightslategray;
+    background-color: lightsteelblue;
+}

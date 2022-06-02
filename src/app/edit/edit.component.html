@@ -1,0 +1,38 @@
+<form [formGroup]="getItem" novalidate (ngSubmit)="getItemByKey()">
+    <div class="form-group write">
+        <label>Ключ</label>
+        <input class="form-control" formControlName="key" />
+    </div>
+    <div class="form-group send">
+        <button class="btn btn-default" >
+            get ItemByKey 
+        </button>    
+    </div>
+</form>
+
+<app-card>
+    <div class="card">
+        <ul>
+            <li class="tasks__task">
+                <h3 class="task__header">{{ key }}</h3>
+                <p class="task__description">{{ value }}</p>
+            </li>
+        </ul>
+    </div>
+</app-card>
+
+<form [formGroup]="setItem" novalidate (ngSubmit)="setItemByKey()">
+    <div class="form-group write">
+        <label>Ключ</label>
+        <input class="form-control" name="name" formControlName="key" />
+    </div>
+    <div class="form-group write">
+        <label>Установить значение</label>
+        <input class="form-control" name="name" formControlName="value" />
+    </div>
+    <div class="form-group send">
+        <button class="btn btn-default">
+            set ItemByKey 
+        </button>
+    </div>
+</form>
