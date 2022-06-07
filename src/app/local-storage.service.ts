@@ -1,9 +1,10 @@
 import { FormGroup, FormControl, Validators, } from '@angular/forms';
-import {Injectable, OnInit} from '@angular/core';
-@Injectable()
+import { Injectable, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({providedIn: 'root'})
 export class LocalStorage {
 
-    // From create
     getItemCases: object;
     cases: object;
     myForm : FormGroup;
@@ -12,7 +13,7 @@ export class LocalStorage {
     key: string;
     
 
-    constructor(){
+    constructor(private http: HttpClient){
     
         // From create
         this.myForm = new FormGroup({
@@ -58,8 +59,6 @@ export class LocalStorage {
     getItemByKey
     getAllOfItems
     */
-
-    
 
     getItemByKey(key) {
         const map = new Map(Object.entries(this.cases))

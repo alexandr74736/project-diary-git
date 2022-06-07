@@ -26,5 +26,34 @@
         </button>    
     </div>
 </form>
+<!-- test -->
+<form (ngSubmit)="submitTest()" [formGroup]="form">
+    <div class="form-group write">
+        <label>Название</label>
+        <input class="form-control" name="name" formControlName="title" />
+          
+        <div class="alert alert-danger"
+            *ngIf="form.controls['title'].invalid && form.controls['title'].touched">
+            Не указано название
+        </div>
+    </div>
+    <div class="form-group write">
+        <label>Задание</label>
+        <input class="form-control" name="name" formControlName="description" />
+          
+        <div class="alert alert-danger"
+            *ngIf="form.controls['description'].invalid && form.controls['description'].touched">
+            Не указано задание
+        </div>
+    </div>
+    <div class="form-group send">
+        <button class="btn btn-default" type="submit" [disabled]="form.invalid">
+            Сохранить
+        </button>
+        <button class="btn btn-default" (click)="clear()" [disabled]="form.invalid">
+            Очистить 
+        </button>    
+    </div>
+</form>
 
 
